@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.Scanner;
+public class TestClass {
+	 public static void main(String[] args) { 
+       int a,b;
+       
+       Scanner sc=new Scanner(System.in);
+       a=sc.nextInt();
+       int sum=0;
+       int c=a;
+       while (a> 0)
+        {
+            b = a % 10;
+            sum = sum + b;
+            a = a / 10;
+        
+          
+        }
+        if (c % sum == 0)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+    }
+}
