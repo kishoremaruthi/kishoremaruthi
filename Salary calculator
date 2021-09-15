@@ -1,0 +1,37 @@
+Help Raja to calculate a first salary that he got from the organization , he was confused with an salary credited in hs account . He asked his friend ritu to identify how salary pay got calculated by giving the format of salary .
+
+His basic pay (to be entered by user) and
+
+Ritu developed a software to calculate the salary pay,with format given as below
+
+HRA=80% of the basic pay,
+
+dA=40% of basic pay .
+
+bonus = 25 % of hra
+
+Input and Output Format:
+
+Refer sample input and output for formatting specification.
+
+All float values are displayed correct to 2 decimal places.
+
+All text in bold corresponds to input and the rest corresponds to output
+
+import java.io.*;
+import java.util.Scanner;
+public class TestClass {
+	 public static void main(String[] args) { 
+       int HRA,dA,bonus,basicpay;
+       float TotalSalary;
+       Scanner sc=new Scanner(System.in);
+       basicpay=sc.nextInt();
+       HRA=(80*basicpay)/100;
+       dA=(40*basicpay)/100;
+       bonus=(25*HRA)/100;
+       TotalSalary=HRA+dA+bonus+basicpay;
+       System.out.println("Total Salary= "+TotalSalary);
+       
+		
+	}
+}
