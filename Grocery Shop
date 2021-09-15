@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.Scanner;
+public class TestClass {
+	 public static void main(String[] args) { 
+		String a;
+        float b,d;
+        int c;
+        Scanner sc=new Scanner(System.in);
+        a=sc.nextLine();
+        b=sc.nextFloat();
+        c=sc.nextInt();
+        d=b*c;
+       System.out.println("Product Details");
+       System.out.println(a);
+       System.out.println(b);
+       System.out.println(c);
+       System.out.println("Bill:"+d);
+	}
+}
