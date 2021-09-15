@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.Scanner;
+import java.lang.Math;
+public class TestClass {
+	 public static void main(String[] args) { 
+		int a,b,c,d,e,f,g,h,i;
+       
+        Scanner sc=new Scanner(System.in);
+      a =sc.nextInt();
+      b =sc.nextInt();
+       
+       d=a+b;
+       e=a-b;
+       f=a*b;
+       g=a/b;
+       h=a%b;
+       i=(int)Math.pow(a,b);
+       
+       System.out.println("The addition of "+a+" and "+b+ " is "+d);
+       System.out.println("The subtraction of "+a+" and "+b+" is "+e);
+       System.out.println("The product of "+a+" and "+b+" is "+f);
+       System.out.println("The division of " +a+" and "+b+" is "+g);
+       System.out.println("The remainder of "+a+" and "+b+" is " +h);
+       System.out.println("The " +a+ " ^ "+b+" is "+i);
+	}
+}
